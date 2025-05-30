@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}신춘문예 당선작 모음 - 연도별{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='year.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="section">
+      <div class="left-box">
+        <p class="year">2025</p>
+      </div>
+
+      <div class="right-box">
+        <ul>
+          <li>동아일보 당선작</li>
+        </ul>
+      </div>
+
+</div>
+{% endblock %}

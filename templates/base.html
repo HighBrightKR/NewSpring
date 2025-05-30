@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}당선작 모음{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap" rel="stylesheet">
+    <link href="../static/default.css" rel="stylesheet" type="text/css">
+    {% block style %}{% endblock %}
+</head>
+<body>
+    <p class="title"><a href="{{ url_for('index') }}">신춘문예 당선작 모음</a></p>
+    <hr class="tilte_hr">
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('year') }}">연도별</a></li>
+            <li><a href="{{ url_for('genre') }}">장르별</a></li>
+            <li><a href="{{ url_for('press') }}">언론별</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
