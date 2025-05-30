@@ -107,8 +107,7 @@ class Database:
         achievements = self.get_achievements()
         for achievement in achievements:
             self.add_content(achievement)
-        for achievement in achievements:
-            self.store_lity(achievement)
+        self.store_lity(achievements)
 
 
 
