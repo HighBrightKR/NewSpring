@@ -6,11 +6,14 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
+from lxml import html
+
+
 class Database:
     def __init__(self):
-        cred = credentials.Certificate("key.json")
-        firebase_admin.initialize_app(cred)
-        self.db = firestore.client()
+        #cred = credentials.Certificate("key.json")
+        #firebase_admin.initialize_app(cred)
+        #self.db = firestore.client()
 
         self.article = {
             "khan" : ["class", "content_text"],
@@ -40,7 +43,7 @@ class Database:
 
         }
 
-        self.start()
+        #self.start()
 
     def get_achievements(self):
         url = "https://www.sinchun.co.kr/2010-2025-shinchun-archive"
